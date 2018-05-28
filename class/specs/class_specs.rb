@@ -30,6 +30,10 @@ class TestStudent < Minitest::Test
     assert_equal("I can talk", student.can_talk())
   end
 
-  def
+  def test_talk_ruby
+    student = Student.new("Jesus", "E22")
+    assert_equal("I love Ruby", student.fav_language("Ruby"))
+
+  end
 
 end
